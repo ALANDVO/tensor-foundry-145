@@ -1,0 +1,20 @@
+{
+  "name": "tensor-foundry-145-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "axios": "^1.6.0",
+    "websocket": "^1.0.34"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "jest",
+    "e2e": "playwright test"
+  }
+}
