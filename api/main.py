@@ -41,7 +41,7 @@ class PaneData(BaseModel):
     height: int = 24
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "id": "pane-1",
                 "title": "Terminal Pane",
@@ -60,7 +60,7 @@ class WorkspaceData(BaseModel):
     active_pane: Optional[str] = None
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "id": "workspace-1",
                 "name": "Main Workspace",
@@ -78,7 +78,7 @@ class SessionData(BaseModel):
     last_updated: datetime = datetime.now()
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "id": "session-1",
                 "name": "Development Session",

@@ -10,12 +10,10 @@ continue-implementation
 
 ### continue-implementation — Continue implementation and resolve known failures
 
-Status: done
+Status: in_progress
 
 Acceptance:
 - Run checks, fix failures, and implement the next planned feature
-
-Implementation: `api/main.py: Added in-memory data store and updated endpoints to persist pane/workspace/session data instead of returning empty stubs`
 
 ---
 

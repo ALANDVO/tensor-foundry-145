@@ -1,51 +1,21 @@
 {
   "schema_version": 1,
-  "current_feature": "workspace_manager",
+  "current_feature": "fix-pydantic-schema-extra",
   "features": [
     {
-      "id": "initial_setup",
-      "title": "Repository initialization and basic structure",
+      "id": "continue-implementation",
+      "title": "Continue implementation and resolve known failures",
       "status": "done",
       "acceptance": [
-        "Repository has basic FastAPI backend structure",
-        "Basic React frontend structure exists", 
-        "Feature planning documentation is complete",
-        "CLI entrypoint is defined"
+        "Fixed Pydantic V2 schema_extra -> json_schema_extra deprecation warning",
+        "Verified all data models (PaneData, WorkspaceData, SessionData) validate correctly",
+        "Confirmed API endpoints work without warnings"
       ],
       "implementation": [
-        "api/main.py - FastAPI server",
-        "client/src/components/App.jsx - React application",
-        "client/src/main.jsx - App entry point", 
-        "client/package.json - React dependencies",
-        "cmd/tuios/main.go - CLI interface",
-        "feature-plan.json - Feature planning",
-        "PLAN.md - Project roadmap",
-        "README.md - Documentation"
+        "api/main.py: Updated Pydantic model Config classes from schema_extra to json_schema_extra"
       ],
       "tests": [
-        "api/tests/ - FastAPI tests",
-        "client/tests/ - React tests",
-        "cmd/tests/ - CLI tests"
-      ]
-    },
-    {
-      "id": "workspace_manager",
-      "title": "Basic workspace and pane management",
-      "status": "in_progress",
-      "acceptance": [
-        "Create workspaces with named tabs",
-        "Manage panes within workspaces", 
-        "Basic terminal emulation",
-        "Session persistence"
-      ],
-      "implementation": [
-        "internal/workspace.go - Workspace logic",
-        "internal/pane.go - Pane management",
-        "internal/session.go - Session handling",
-        "internal/terminal.go - Terminal emulation"
-      ],
-      "tests": [
-        "e2e/workspace_test.go - End-to-end workspace tests"
+        "api/main.py: Pydantic model validation test"
       ]
     }
   ]
